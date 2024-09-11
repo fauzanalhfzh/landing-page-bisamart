@@ -45,10 +45,9 @@ export default function Description() {
       </div>
       <Image
         src="/images/mobile.png"
-        width={619}
+        width={442}
         height={793}
         alt="Mobile"
-        className="mx-auto"
       />
       </div>
     </div>
