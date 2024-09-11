@@ -1,6 +1,28 @@
+'use client'
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import PulsatingButton from "@/components/magicui/pulsating-button";
+
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar bg-base-100 z-10 sticky top-0">
+    <div className={`navbar bg-base-100 z-10 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +47,15 @@ export default function Navbar() {
             <li><a>Hubungi Kami</a></li>
           </ul>
         </div>
-        <a className="text-xl mx-2 font-bold">BisaMart</a>
+        <a href="#" className="flex flex-row items-center justify-center gap-1 md:gap-2 cursor-pointer">
+          <Image
+            src="/images/bisamart.png"
+            width="23"
+            height="28"
+            alt="Logo"
+          />
+          <span className="font-bold text-xl md:text-2xl mt-1.5">BisaMart</span>
+        </a>
       </div>
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1 font-semibold hidden lg:flex">
@@ -33,7 +63,9 @@ export default function Navbar() {
             <li><a>Bantuan</a></li>
             <li><a>Hubungi Kami</a></li>
         </ul>
-        <a className="btn bg-primary text-white font-semibold">Download Sekarang</a>
+        <a href="#" className="text-white font-medium text-sm">
+        <PulsatingButton>Download Sekarang</PulsatingButton>
+        </a>
       </div>
     </div>
   )

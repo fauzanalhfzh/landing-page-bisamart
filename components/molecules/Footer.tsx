@@ -6,7 +6,15 @@ export default function Footer() {
     <>
       <footer className="footer bg-base-100 p-10">
         <nav>
-          <h6 className="text-3xl font-extrabold">BisaMart</h6>
+        <div className="flex flex-row items-center justify-center gap-1 md:gap-2">
+          <Image
+            src="/images/bisamart.png"
+            width="23"
+            height="28"
+            alt="Logo"
+          />
+          <span className="font-bold text-xl md:text-2xl mt-1.5">BisaMart</span>
+        </div>
         </nav>
         <nav>
           <h6 className="text-primary font-bold">Tentang BisaMart</h6>
@@ -95,7 +103,7 @@ export default function Footer() {
         </svg>
       </a>
       </div>
-      <aside className="text-center py-6 footer-title">
+      <aside className="text-center py-6 text-slate-400 font-medium text-base">
         <p>©BisaMart {new Date().getFullYear()} - All right reserved</p>
       </aside>
     </>

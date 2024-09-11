@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Description() {
   return (
-    <div className="hero bg-base-100 px-4 lg:px-2 mt-48 lg:mt-10  z-0">
+    <div className="hero bg-base-100 px-4 lg:px-2 lg:mt-10  z-0">
       <div className="flex w-full justify-center lg:justify-between mt-10 flex-col lg:flex-row">
       <div className="mt-4 text-left">
-        <h1 className="text-5xl mb-4 lg:text-7xl font-semibold">Kenapa Belanja</h1>
-          <h1 className="text-5xl lg:text-7xl font-semibold">di <span className="font-extrabold text-primary">BisaMart</span></h1>
+        <h1 className="text-4xl mb-4 lg:text-6xl font-semibold">Kenapa Belanja</h1>
+          <h1 className="text-4xl lg:text-6xl font-semibold">di <span className="font-extrabold text-primary">BisaMart</span></h1>
         <div className="flex gap-8 flex-col mt-10">
           <div className="flex flex-row gap-10">
             <ClockIcon className="size-10 text-primary"/>
@@ -43,20 +43,12 @@ export default function Description() {
           </div>
         </div>
       </div>
-      <div className="mockup-phone">
-        <div className="camera"></div>
-        <div className="display">
-          <div className="artboard artboard-demo phone-1">
-          <Image
-          src="/images/apps.jpg"
-          alt="Hero Images"
-          width="300"
-          height="1000"
-          className="max-w-sm mx-auto lg:mx-0 rounded-lg shadow-2xl" />
-          BisaMart
-          </div>
-        </div>
-      </div>
+      <Image
+        src="/images/mobile.png"
+        width="619"
+        height="793"
+        alt="Mobile Screens"
+      />
       </div>
     </div>
   )
