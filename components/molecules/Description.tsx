@@ -45,9 +45,9 @@ export default function Description() {
       </div>
       <Image
         src="/images/mobile.png"
-        width="619"
-        height="793"
-        alt="Mobile Screens"
+        width={619}
+        height={793}
+        alt="Mobile"
       />
       </div>
     </div>
