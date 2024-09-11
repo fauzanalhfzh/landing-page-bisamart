@@ -48,6 +48,7 @@ export default function Description() {
         width={619}
         height={793}
         alt="Mobile"
+        className="mx-auto"
       />
       </div>
     </div>
