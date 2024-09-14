@@ -15,8 +15,8 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-start lg:items-center space-x-8 py-8">
           <div className="border-l border-gray-300 h-12"></div>
             <div className="">
-              <h2 className="text-3xl font-bold text-blue-500">
-                <NumberTicker value={50} className="text-blue-500" />
+              <h2 className="text-3xl font-bold text-primary">
+                <NumberTicker value={50} className="text-primary" />
                 k+
               </h2>
               <p className="text-gray-500">Customer</p>
@@ -25,8 +25,8 @@ export default function Hero() {
             <div className="border-l border-gray-300 h-12"></div>
 
             <div className="text-center">
-            <h2 className="text-3xl font-bold text-blue-500">
-                <NumberTicker value={10} className="text-blue-500" />
+            <h2 className="text-3xl font-bold text-primary">
+                <NumberTicker value={10} className="text-primary" />
                 k+
               </h2>
               <p className="text-gray-500">Merchants</p>

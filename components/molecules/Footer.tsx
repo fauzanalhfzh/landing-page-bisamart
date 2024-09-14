@@ -16,14 +16,14 @@ export default function Footer() {
           <span className="font-bold text-xl md:text-2xl mt-1.5">BisaMart</span>
         </div>
         </nav>
-        <nav>
+        <nav className="text-base">
           <h6 className="text-primary font-bold">Tentang BisaMart</h6>
           <a className="link link-hover">Syarat dan ketentuan</a>
           <a className="link link-hover">Kebijakan Privasi</a>
           <a className="link link-hover">Blog</a>
           <a className="link link-hover">BisaPeople</a>
         </nav>
-        <nav>
+        <nav className="text-base">
           <h6 className="text-primary font-bold">Terhubung Dengan Kami</h6>
           <p>PT. Mahira Technologi</p>
           <p>18 Office Park, Lantai 25, Suite A 2, Jalan tb</p>
@@ -38,7 +38,7 @@ export default function Footer() {
           <a>+628 12345</a>
           </div>
         </nav>
-        <nav className="flex flex-col space-y-1">
+        <nav className="flex flex-col space-y-1 text-base">
           <h6 className="text-primary font-bold">Unduh Bisamart</h6>
           <a href="#">
             <Image

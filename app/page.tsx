@@ -7,7 +7,7 @@ import Navbar from "../components/molecules/Navbar";
 
 export default function Home() {
   return (
-    <div className="md:px-20">
+    <>
     <Navbar />
     <div className="md:ms-20">
       <Hero />
@@ -15,6 +15,6 @@ export default function Home() {
       <Testimonial />
     </div>
     <Footer />
-    </div>
+    </>
   );
 }
