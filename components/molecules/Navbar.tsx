@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`navbar bg-base-100 z-10 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+    <div className={`navbar bg-base-100 md:px-20 z-10 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

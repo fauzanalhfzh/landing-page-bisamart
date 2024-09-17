@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="footer bg-base-100 p-10">
+      <footer className="footer bg-base-100 p-10 md:px-20">
         <nav>
         <div className="flex flex-row items-center justify-center gap-1 md:gap-2">
           <Image
@@ -103,7 +103,7 @@ export default function Footer() {
         </svg>
       </a>
       </div>
-      <aside className="text-center py-6 text-slate-400 font-medium text-base">
+      <aside className="text-center py-6 text-slate-400 font-light text-base">
         <p>©BisaMart {new Date().getFullYear()} - All right reserved</p>
       </aside>
     </>
